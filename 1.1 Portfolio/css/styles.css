@@ -1,0 +1,382 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #2b2b2b;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.navegacao{
+    background-color: #2b2b2b;
+    color: white;
+    height: 50px;
+
+    animation-name: navigation;
+    animation-duration: 2.5s;
+
+}
+
+.navegacao ul{
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0px;
+    text-align: right;
+    height: 50px;
+}
+
+.navegacao ul li{
+    position: relative;
+    display: inline-block;
+}
+
+.navegacao li{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.hobbies{
+    line-height: normal;
+    width: 100%;
+    display: none;
+    align-items: center;
+    position: absolute;
+    right: 0px
+}
+
+.hobbies li
+{
+  font-size: 14px;
+  border-radius: 100px;
+}
+
+.navegacao li:hover ul
+{
+    display: block;
+}
+
+.hobbies li:hover
+{
+  background-color: #f27609;
+  color: white;
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: white;
+}
+
+.navegacao li.threeline{
+    display: none;
+}
+
+.navegacao li.threeline:hover{
+    color: #f27609;
+    cursor: pointer;
+}
+
+.navegacao a:hover{
+    color: #f27609;
+}
+
+.capa{
+    color: white;
+
+}
+
+.capa span{
+    color: #f27609;
+    display: block;
+}
+
+.capa div {
+    display: inline-block;
+    height: 650px;
+}
+
+.profile_fig{
+    width: 40%;
+    text-align: center;
+
+    animation-name: profile-img;
+    animation-duration: 2s;
+
+}
+
+.profile_fig img{
+    width: 350px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.profile_text{
+    vertical-align: top;
+    width: 59%;
+    animation-name: profile-text;
+    animation-duration: 2s;
+}
+
+.profile_text h1{
+    font-size: 58px;
+    margin-top: 200px;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.profile_text h2{
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -30px;
+}
+
+.main{
+    padding: 80px 180px 80px 100px;
+    animation-name: conteudo;
+    animation-duration: 2s;
+}
+
+.main h1{
+    color: white;
+    font-weight: normal;
+}
+
+.main h2{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.main h3{
+    color: #f27609;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main p{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.cv-fig{
+    float: right;
+}
+
+.caminho{
+    padding-left: 0px;
+    list-style: none;
+    color: gray;
+
+}
+
+.caminho li{
+    display: inline-block;
+}
+
+.caminho a{
+    color: gray;
+}
+
+.social-link img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.miniatura{
+    width: 290px;
+    height: 435px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.miniatura a{
+    text-decoration: none;
+}
+
+.blackbox{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+	opacity: 0;
+	padding-top: 200px;
+	transition: 1s;  
+}
+
+.blackbox:hover{
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.blackbox-text{
+    text-align: center;
+}
+
+.blackbox-text h1{
+    font-size: 19px;
+    color: #f27609;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.setima h2{
+    font-size: 18px;
+}
+
+.setima h3{
+    font-size: 35px;
+    color: white;
+}
+
+.setima a{
+    text-decoration: none;
+    color: white;
+}
+
+.back-line{
+    color: #f27609;
+}
+
+.hobbies-mobile{
+    font-size: 30px;
+    text-align: center;
+}
+
+.hobbies-mobile a li{
+    display: block;
+    font-size: 90px;
+    line-height: 120px;
+
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes profile-img{
+    0% {opacity: 0; transform: translate(0px,20px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes profile-text{
+    0% {opacity: 0; transform: translate(0px,-20px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+@keyframes navigation{
+    0% {opacity: 0;}
+    50%{opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes conteudo{
+    0% {opacity: 0; transform: translate(-20px,0px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+
+
+
+@media (max-width:1000px){
+    .navegacao ul li{
+        display: none;
+    }
+
+    .navegacao li.threeline{
+        display: inline-block;
+    }
+
+    .navigation ul
+    {
+    text-align: right;
+    margin-right: 30px;
+    }
+
+    .capa div{
+        display: block;
+        height: auto;
+    }
+
+    .profile_fig{
+        width: 100%;
+    }
+
+    .profile_fig img{
+        margin-top: 0;
+        max-width: 80%;
+    }
+
+    .profile_text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile_text h1{
+        margin-top: 30px;
+        font-size: 36px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .profile-text h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main {
+        padding: 10px 5% 40px 5%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .main p {
+        text-align: left;
+        line-height: 30px; 
+    }
+    .caminho li {
+        font-size: 12px;
+    }
+    .cv-pic {
+        float: none;
+        max-width: 100%;
+        margin-right: 0px;
+    }
+    .miniatura {
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+    
+    .blackbox {
+        opacity: 0.8;
+    }
+    
+    .menujs{
+        height: auto;
+    }
+    .menujs ul{
+        height: auto;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+
+    }
+    .menujs ul li{
+        padding-bottom: 2px;
+        text-align: center;
+        width: auto;
+        display: block;
+        
+    }
+    .menujs li:hover ul{
+        display: none;
+    }
+
+    .menujs .hobbies ul li{
+        display: inline-block;
+    }
+}
